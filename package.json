@@ -13,7 +13,7 @@
     "src"
   ],
   "scripts": {
-    "prepare": "tsc",
+    "postinstall": "tsc",
     "test": "tsc && node --enable-source-maps --test",
     "dev": "dotenv-flow npm run"
   },
