@@ -17,10 +17,11 @@
     "test": "tsc && node --enable-source-maps --test",
     "dev": "dotenv-flow npm run"
   },
-  "peerDependencies": {},
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
   "devDependencies": {
     "dotenv-flow-cli": "^1.0.0",
-    "expect": "^29.7.0",
-    "typescript": "^5.2.2"
+    "expect": "^29.7.0"
   }
 }
