@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "license": "BSL-1.0",
   "author": "DWJ",
-  "type": "module",
+  "type": "commonjs",
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*.js"
   },
+  "main": "./dist/index.js",
   "files": [
     "dist",
     "src"
