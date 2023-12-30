@@ -4,7 +4,6 @@
   "description": "Mask keys in an object with asterisks",
   "license": "BSL-1.0",
   "author": "DWJ",
-  "type": "commonjs",
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*.js"
@@ -15,15 +14,15 @@
     "src"
   ],
   "scripts": {
-    "postinstall": "tsc",
+    "prepare": "rimraf dist && tsc",
     "test": "tsc && node --enable-source-maps --test",
     "dev": "dotenv-flow npm run"
   },
-  "dependencies": {
-    "typescript": "^5.2.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "dotenv-flow-cli": "^1.0.0",
-    "expect": "^29.7.0"
+    "expect": "^29.7.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
   }
 }
