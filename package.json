@@ -18,8 +18,8 @@
     "test": "tsc && node --enable-source-maps --test",
     "dev": "dotenv-flow npm run"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^20.11.20",
     "dotenv-flow-cli": "^1.0.0",
     "expect": "^29.7.0",
     "rimraf": "^5.0.5",
