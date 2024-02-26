@@ -77,6 +77,28 @@ test("maskKeys should handle arrays", () => {
       },
     ],
   });
+
+  const masked2 = maskKeys((key) => key === "name" || key === "street")([
+    [input],
+  ]);
+  expect(masked2).toStrictEqual([
+    [
+      {
+        name: "****",
+        age: 30,
+        addresses: [
+          {
+            street: "***********",
+            city: "Anytown",
+          },
+          {
+            street: "***********",
+            city: "Othertown",
+          },
+        ],
+      },
+    ],
+  ]);
 });
 
 test("maskValue should mask sensitive values", () => {
