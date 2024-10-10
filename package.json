@@ -1,6 +1,6 @@
 {
   "name": "@dwidge/mask-keys",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mask keys in an object with asterisks",
   "license": "BSL-1.0",
   "author": "DWJ",
@@ -24,5 +24,12 @@
     "expect": "^29.7.0",
     "rimraf": "^5.0.5",
     "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@9.7.1",
+  "engines": {
+    "node": ">=20"
   }
 }
