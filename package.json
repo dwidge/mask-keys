@@ -1,6 +1,6 @@
 {
   "name": "@dwidge/mask-keys",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Mask keys in an object with asterisks",
   "license": "BSL-1.0",
   "author": "DWJ",
