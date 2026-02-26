@@ -16,7 +16,7 @@
   "scripts": {
     "prepare": "rimraf dist && tsc",
     "test": "tsc && node --enable-source-maps --test",
-    "dev": "dotenv-flow npm run"
+    "dev": "dotenv-flow $npm_execpath run"
   },
   "devDependencies": {
     "@types/node": "^22.15.21",
